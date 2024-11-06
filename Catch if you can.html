@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch My Love ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+        #heart {
+            font-size: 3em;
+            color: #ff69b4;
+            position: absolute;
+            cursor: pointer;
+            animation: move 2s infinite;
+        }
+        @keyframes move {
+            0% { top: 20%; left: 10%; }
+            25% { top: 60%; left: 70%; }
+            50% { top: 30%; left: 50%; }
+            75% { top: 80%; left: 20%; }
+            100% { top: 20%; left: 10%; }
+        }
+        #message {
+            font-size: 1.5em;
+            color: #333;
+            display: none;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="heart" onclick="showConfession()">💖</div>
+    <div id="message">You caught my heart! 😊 I
